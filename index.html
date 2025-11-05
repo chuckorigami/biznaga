@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>biznaga red creativa_ · Diseño, impresión y soluciones audiovisuales</title>
+  <meta name="description" content="Estudio creativo en SLP: diseño gráfico, impresión, DTF textil y UV, vinil, foto, agendas, merch, y soluciones AV para marcas y eventos.">
+  <link rel="icon" href="/favicon.ico">
+  <meta property="og:title" content="biznaga red creativa_">
+  <meta property="og:description" content="Diseño + impresión + audio/visual. Hecho en San Luis Potosí.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/logo-biznaga.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="./">
+        <img src="./assets/logo-biznaga.png" alt="biznaga red creativa logo" height="44">
+        <span>biznaga red creativa_</span>
+      </a>
+      <div class="cta">
+        <a class="btn" id="whatsappBtn" href="#" rel="nofollow">WhatsApp</a>
+        <a class="btn ghost" href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <span class="badge">Estudio creativo · SLP</span>
+        <h1>Diseño, impresión y audio/visual que sí venden.</h1>
+        <p>Branding, arte listo para producción, impresión DTF textil y UV, vinil, foto, agendas y merch. Integramos soluciones AV para activaciones y espacios pequeños. Todo con criterio de costo y resultado.</p>
+        <div class="cta">
+          <a class="btn" href="#servicios">Ver servicios</a>
+          <a class="btn ghost" href="#portafolio">Portafolio</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img class="logo" src="./assets/logo-biznaga.png" alt="biznaga red creativa">
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <h2>Servicios</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Diseño gráfico</h3>
+          <p>Identidad visual, artes listos para impresión, vectorización y preparación de archivos.</p>
+        </div>
+        <div class="card">
+          <h3>Impresión &amp; merch</h3>
+          <p>DTF textil y UV, vinil recorte/impreso, stickers, agendas, cuadernos, playeras y más.</p>
+        </div>
+        <div class="card">
+          <h3>Foto y retoque</h3>
+          <p>Productos y personas, limpieza digital y composición para campañas.</p>
+        </div>
+        <div class="card">
+          <h3>Audio/Visual compacto</h3>
+          <p>Microsistemas, microfonía, racks compactos y soporte para espacios chicos y demos.</p>
+        </div>
+        <div class="card">
+          <h3>Catálogo digital</h3>
+          <p>Integración con Google Drive para catálogos, fichas técnicas y presupuestos.</p>
+        </div>
+        <div class="card">
+          <h3>Asesoría y costos</h3>
+          <p>Modelos de precio, control de insumos y elección de proveedores.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portafolio" class="section">
+      <h2>Portafolio rápido</h2>
+      <p class="muted">Sustituye estos enlaces por tus álbumes o carpetas de Drive.</p>
+      <div class="grid">
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <h3>Identidad + merch</h3>
+          <p>Playerset, stickers, empaques.</p>
+        </a>
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <h3>DTF textil</h3>
+          <p>Series cortas para marcas locales.</p>
+        </a>
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <h3>Vinil &amp; gran formato</h3>
+          <p>Rotulación ligera y señalización.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>WhatsApp</h3>
+          <p><a href="#" id="whatsappLink">Escríbenos</a> para cotizaciones y tiempos de entrega.</p>
+        </div>
+        <div class="card">
+          <h3>Correo</h3>
+          <p><a href="mailto:contactoa@biznagarc.com">contacto@biznagarc.com</a></p>
+        </div>
+        <div class="card">
+          <h3>Ubicación</h3>
+          <p>San Luis Potosí, México · Atención con cita.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="row">
+        <div>© <span id="year"></span> biznaga red creativa_</div>
+        <div><a href="#servicios">Servicios</a> · <a href="#portafolio">Portafolio</a> · <a href="#contacto">Contacto</a></div>
+      </div>
+    </footer>
+  </div>
+
+<script>
+  // Año dinámico
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Config fácil: pon aquí tu número de WhatsApp con código de país (sin +), por ejemplo 5214440000000
+  const WHATSAPP_NUMBER = '5214444651700';
+  const DEFAULT_MSG = encodeURIComponent('Hola, quiero información de biznaga red creativa');
+  const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${DEFAULT_MSG}`;
+
+  const waBtn = document.getElementById('whatsappBtn');
+  const waLink = document.getElementById('whatsappLink');
+  [waBtn, waLink].forEach(el => { if (el) el.href = waUrl; });
+</script>
+</body>
+</html>
